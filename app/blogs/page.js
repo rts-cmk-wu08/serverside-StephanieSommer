@@ -9,6 +9,7 @@ const getPosts = async () => {
   if (!result.ok) {
     throw new Error("Failed to fetch data");
   }
+  console.log(result)
   return result.json();
 };
 
